@@ -1,5 +1,5 @@
-word = input()
-while word != "end":
-    reversed_word = word[::-1]
-    print(f"{word} = {reversed_word}")
-    word = input()
+text = [x for x in input()]
+stack = []
+for word in range(len(text)):
+    stack.append(text.pop())
+print("".join(stack))
